@@ -1,8 +1,13 @@
 import React from 'react';
 import Link from '@components/_shared/Link';
 import MainLayout from '@components/_layouts/MainLayout';
+import { fetchHello } from '@cloud/fetchers';
 
 const About = (): JSX.Element => {
+	const tryRequest = async () => {
+		const result = await fetchHello();
+		console.log(result);
+	};
 	return (
 		<MainLayout title="About" className="flex-sc col">
 			<p className="z-10 mt-48 mb-2 max-w-sm text-center">
@@ -27,6 +32,13 @@ const About = (): JSX.Element => {
 				<Link href="/" className="px-4 py-2 text-white bg-accent hover:bg-opacity-80">
 					BACK HOME
 				</Link>
+				<button
+					type="submit"
+					onClick={tryRequest}
+					className="px-4 py-2 text-white bg-black hover:bg-opacity-80"
+				>
+					Try Alert
+				</button>
 			</div>
 		</MainLayout>
 	);
