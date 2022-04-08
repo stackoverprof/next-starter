@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import MainLayout from '@components/_layouts/MainLayout';
 import Link from '@components/_shared/Link';
+import MainLayout from '@components/_layouts/MainLayout';
 import useForm from '@core/hooks/useForm';
 
 interface FormType {
@@ -61,7 +61,7 @@ const Form = (): JSX.Element => {
 
 				<button
 					type="submit"
-					className="bg-black text-white p-2 ml-auto"
+					className="p-2 ml-auto text-white bg-black"
 					data-loading={isLoading}
 				>
 					SUBMIT <i className="spinner"></i>

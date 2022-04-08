@@ -1,35 +1,24 @@
 import React from 'react';
-import MainLayout from '@components/_layouts/MainLayout';
-import { useLayout } from '@core/contexts/app';
 import Link from '@components/_shared/Link';
-import { EnumType } from '@components/_shared/AlertHandler';
+import MainLayout from '@components/_layouts/MainLayout';
 
 const About = (): JSX.Element => {
-	const { Alert } = useLayout();
-
-	const getRandomType = (): EnumType => {
-		const types: EnumType[] = ['info', 'danger', 'success', 'warning'];
-		return types[Math.floor(Math.random() * types.length)];
-	};
-
 	return (
 		<MainLayout title="About" className="flex-sc col">
-			<p className="z-10 max-w-sm mt-48 mb-2 text-center">
+			<p className="z-10 mt-48 mb-2 max-w-sm text-center">
 				The technologies used in this template
 			</p>
 			<div className="flex-cc gap-1 mb-4">
-				{/* eslint-disable-next-line @next/next/no-img-element */}
 				<img
 					src="https://img.shields.io/badge/NEXT%20-%23000000.svg?&style=flat&logo=next.js&logoColor=white"
 					alt="tech"
 				/>
-				{/* eslint-disable-next-line @next/next/no-img-element */}
 				<img
 					src="https://img.shields.io/badge/TAILWIND%20-%2338B2AC.svg?&style=flat&logo=tailwindcss&logoColor=white"
 					alt="tech"
 				/>
 			</div>
-			<p className="z-10 max-w-sm mb-16 text-center">
+			<p className="z-10 mb-16 max-w-sm text-center">
 				<strong>Extras:</strong> Layout, Alert, Custom Link, Custom Image, SEOTags, useForm,
 				Context setup
 			</p>
@@ -38,15 +27,6 @@ const About = (): JSX.Element => {
 				<Link href="/" className="px-4 py-2 text-white bg-accent hover:bg-opacity-80">
 					BACK HOME
 				</Link>
-				<button
-					type="submit"
-					onClick={() =>
-						Alert('More variation of color with the second argument', getRandomType())
-					}
-					className="px-4 py-2 text-white bg-black hover:bg-opacity-80"
-				>
-					Try Alert
-				</button>
 			</div>
 		</MainLayout>
 	);

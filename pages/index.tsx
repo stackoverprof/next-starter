@@ -1,16 +1,16 @@
 import React from 'react';
-import MainLayout from '@components/_layouts/MainLayout';
 import Link from '@components/_shared/Link';
+import MainLayout from '@components/_layouts/MainLayout';
 
 const Index = (): JSX.Element => {
 	return (
 		<MainLayout title="Home" className="flex-sc col">
-			<h1 className="mb-4 mt-48 text-4xl font-bold text-center z-10">Next (Basic) Starter</h1>
-			<p className="max-w-sm mb-8 text-center z-10">
+			<h1 className="z-10 mt-48 mb-4 text-4xl font-bold text-center">Next (Basic) Starter</h1>
+			<p className="z-10 mb-8 max-w-sm text-center">
 				The template for a quick and intuitive workflow with Next.js and tailwindcss
 			</p>
 
-			<div className="flex-cc gap-4 z-10">
+			<div className="flex-cc z-10 gap-4">
 				<Link href="/about" className="px-4 py-2 text-white bg-accent hover:bg-opacity-80">
 					ABOUT
 				</Link>
@@ -20,7 +20,7 @@ const Index = (): JSX.Element => {
 			</div>
 
 			<div
-				className="fixed bottom-0 w-full h-1/4 bg-cover flex-cc"
+				className="fixed flex-cc bottom-0 w-full h-1/4 bg-cover"
 				style={{
 					backgroundImage: 'url(https://svgshare.com/i/_H4.svg)',
 					paddingBottom: 'env(safe-area-inset-bottom)',

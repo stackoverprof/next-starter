@@ -1,8 +1,6 @@
 import React from 'react';
-import useMinHeight from '@core/hooks/useMinHeight';
-import AlertHandler from '@components/_shared/AlertHandler';
 import SEOTags from '@components/_shared/SEOTags';
-import { useLayout } from '@core/contexts/app';
+import useMinHeight from '@core/hooks/useMinHeight';
 
 interface Props {
 	children: React.ReactNode;
@@ -13,7 +11,6 @@ interface Props {
 
 const MainLayout = ({ children, title, className, style }: Props): JSX.Element => {
 	const [minHeight, upperRef, lowerRef] = useMinHeight();
-	const { AlertValue } = useLayout();
 
 	return (
 		<>
@@ -26,8 +23,6 @@ const MainLayout = ({ children, title, className, style }: Props): JSX.Element =
 			</main>
 
 			<footer ref={lowerRef}>{/* Footer things */}</footer>
-
-			{AlertValue && <AlertHandler key={Date.now()} />}
 		</>
 	);
 };
