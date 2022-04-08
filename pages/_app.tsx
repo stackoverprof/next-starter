@@ -1,7 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
 import ProgressBar from 'nextjs-progressbar';
+import store from '@core/redux/store.js';
 import { AppProps } from 'next/app';
+import { Provider } from 'react-redux';
 import '@core/styles/tailwind.css';
 import '@core/styles/typefaces.css';
 
@@ -19,7 +21,9 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
 				height={3}
 				options={{ showSpinner: false }}
 			/>
-			<Component {...pageProps} />
+			<Provider store={store}>
+				<Component {...pageProps} />
+			</Provider>
 		</>
 	);
 };

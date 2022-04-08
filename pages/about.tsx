@@ -25,8 +25,8 @@ const About = (): JSX.Element => {
 				/>
 			</div>
 			<p className="z-10 mb-16 max-w-sm text-center">
-				<strong>Extras:</strong> Layout, Alert, Custom Link, Custom Image, SEOTags, useForm,
-				Context setup
+				<strong>Extras:</strong> Layout, Custom Link, Custom Image, SEOTags, useForm, Redux
+				setup, eslint and prettier setup
 			</p>
 
 			<div className="flex-cc gap-4 mb-24">
