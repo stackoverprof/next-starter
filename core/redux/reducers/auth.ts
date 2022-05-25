@@ -1,7 +1,7 @@
+import { AuthActionsType, AuthStateType } from '@core/@types/authRedux';
 import { createSlice } from '@reduxjs/toolkit';
-import { useSelector } from 'react-redux';
 
-const initialState = {
+const initialState: AuthStateType = {
 	authenticated: false,
 	access_token: 'vfjvidfjvkn',
 };
@@ -21,6 +21,5 @@ const ReduxSlice = createSlice({
 	},
 });
 
-export const { setToken, removeToken } = ReduxSlice.actions;
-export const useAuth = () => useSelector((RootState) => RootState.auth);
+export const actions: AuthActionsType = ReduxSlice.actions;
 export default ReduxSlice.reducer;

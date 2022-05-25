@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import ProgressBar from 'nextjs-progressbar';
-import store from '@core/redux/store.js';
+import store from '@core/redux/store';
 import { AppProps } from 'next/app';
 import { Provider } from 'react-redux';
 import '@core/styles/tailwind.css';
