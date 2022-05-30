@@ -2,22 +2,17 @@ import { AuthActionsType, AuthStateType } from '@core/@types/authRedux';
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState: AuthStateType = {
-	authenticated: false,
-	access_token: 'vfjvidfjvkn',
+	accessToken: '',
 };
 
 const ReduxSlice = createSlice({
 	name: 'AUTH',
 	initialState,
 	reducers: {
-		setToken: (state, action) => {
-			state.access_token = action.payload;
-			state.authenticated = true;
+		setAccessToken: (state, action) => {
+			state.accessToken = action.payload;
 		},
-		removeToken: (state) => {
-			state.access_token = '';
-			state.authenticated = false;
-		},
+		reset: () => initialState,
 	},
 });
 

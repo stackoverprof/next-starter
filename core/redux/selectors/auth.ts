@@ -7,10 +7,19 @@ import { useSelector } from 'react-redux';
 export const useAuth = (): UseAuthType => {
 	const state = useSelector((state: RootState) => state.auth);
 	const dispatcher = useAutoDispatcher(actions);
-	console.log(state);
+
+	// SUPPORTING FUNCTIONS
+	const isTokenExist = () => {
+		return Boolean(state.accessToken);
+	};
+
+	// EXPORTED HOOK PRODUCTS
+
+	const authenticated = isTokenExist();
 
 	return {
 		...state,
 		...dispatcher,
+		authenticated,
 	};
 };
