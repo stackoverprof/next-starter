@@ -14,12 +14,18 @@ export const useAuth = (): UseAuthType => {
 	};
 
 	// EXPORTED HOOK PRODUCTS
-
 	const authenticated = isTokenExist();
+
+	const setAccessToken = (accessToken: string) => {
+		// dispatcher interceptor for the real `setAccessToken`
+		localStorage.setItem('accessToken', accessToken);
+		dispatcher.setAccessToken(accessToken);
+	};
 
 	return {
 		...state,
 		...dispatcher,
 		authenticated,
+		setAccessToken,
 	};
 };
