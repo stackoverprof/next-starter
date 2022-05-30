@@ -30,7 +30,7 @@ const About = (): JSX.Element => {
 			</p>
 
 			<div className="flex-cc gap-4 mb-24">
-				<Link href="/" className="px-4 py-2 text-white bg-accent hover:bg-opacity-80">
+				<Link href="/" className="px-4 py-2 text-white bg-theme-orange hover:bg-opacity-80">
 					BACK HOME
 				</Link>
 				<button

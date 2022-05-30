@@ -11,11 +11,13 @@ module.exports = {
 			colors: {
 				base: '#ffffff',
 				primary: '#3b3b3b',
-				accent: '#FF5B14',
-				info: '#2DA7FB',
-				warning: '#FFCB11',
-				danger: '#ec4141',
-				success: '#67db8e',
+				theme: {
+					orange: '#FF5B14',
+					blue: '#2DA7FB',
+					yellow: '#FFCB11',
+					red: '#ec4141',
+					green: '#67db8e',
+				},
 			},
 			fontFamily: {
 				main: 'ProximaNova, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',

@@ -4,7 +4,7 @@ import ProgressBar from 'nextjs-progressbar';
 import store from '@core/redux/store';
 import { AppProps } from 'next/app';
 import { Provider } from 'react-redux';
-import '@core/styles/tailwind.css';
+import '@core/styles/global.tailwind.css';
 import '@core/styles/typefaces.css';
 
 const App = ({ Component, pageProps }: AppProps): JSX.Element => {

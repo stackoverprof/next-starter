@@ -44,5 +44,3 @@ const Link = ({
 };
 
 export default Link;
-
-// [TODO] : is this still necessary?

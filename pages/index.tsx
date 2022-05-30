@@ -11,7 +11,10 @@ const Index = (): JSX.Element => {
 			</p>
 
 			<div className="flex-cc z-10 gap-4">
-				<Link href="/about" className="px-4 py-2 text-white bg-accent hover:bg-opacity-80">
+				<Link
+					href="/about"
+					className="px-4 py-2 text-white bg-theme-orange hover:bg-opacity-80"
+				>
 					ABOUT
 				</Link>
 				<Link href="/form" className="px-4 py-2 text-white bg-black hover:bg-opacity-80">

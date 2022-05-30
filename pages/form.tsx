@@ -68,7 +68,7 @@ const Form = (): JSX.Element => {
 				</button>
 			</form>
 
-			<Link href="/" className="px-4 py-2 text-white bg-accent hover:bg-opacity-80">
+			<Link href="/" className="px-4 py-2 text-white bg-theme-orange hover:bg-opacity-80">
 				BACK HOME
 			</Link>
 		</MainLayout>
