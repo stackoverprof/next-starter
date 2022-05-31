@@ -1,5 +1,8 @@
 import api from '../lib/api';
 
-export const getHello = async () => {
-	return await api.get('/hello').then((res) => res.data);
+export const getUser = async () => {
+	return await api
+		.get('/me')
+		.then((res) => res.data)
+		.catch((err) => console.error(err));
 };

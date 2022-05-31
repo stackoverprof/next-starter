@@ -1,13 +1,10 @@
 import React from 'react';
 import Link from '@components/_shared/Link';
 import MainLayout from '@components/_layouts/MainLayout';
-import { getHello } from '@cloud/fetchers';
+import useUser from '@core/swr/user';
 
 const About = (): JSX.Element => {
-	const tryRequest = async () => {
-		const result = await getHello();
-		alert('Hi, there. ' + result.name);
-	};
+	const { user, loading } = useUser();
 
 	return (
 		<MainLayout title="About" className="flex-sc col">
@@ -33,14 +30,15 @@ const About = (): JSX.Element => {
 				<Link href="/" className="px-4 py-2 text-white bg-theme-orange hover:bg-opacity-80">
 					BACK HOME
 				</Link>
-				<button
-					type="submit"
-					onClick={tryRequest}
-					className="px-4 py-2 text-white bg-black hover:bg-opacity-80"
-				>
-					Try Fetch
-				</button>
 			</div>
+
+			{loading ? (
+				<p>fetching...</p>
+			) : (
+				<p className="z-10 mb-16 max-w-sm text-center">
+					SWR Example: your name is {user.name} and you have username of {user.username}
+				</p>
+			)}
 		</MainLayout>
 	);
 };

@@ -4,6 +4,7 @@ import ProgressBar from 'nextjs-progressbar';
 import store from '@core/redux/store';
 import { AppProps } from 'next/app';
 import { Provider } from 'react-redux';
+import { SWRConfig } from 'swr';
 import '@core/styles/global.tailwind.css';
 import '@core/styles/typefaces.css';
 
@@ -22,7 +23,9 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
 				options={{ showSpinner: false }}
 			/>
 			<Provider store={store}>
-				<Component {...pageProps} />
+				<SWRConfig>
+					<Component {...pageProps} />
+				</SWRConfig>
 			</Provider>
 		</>
 	);
