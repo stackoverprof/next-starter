@@ -1,3 +1,5 @@
+/* This hook simplify the need for useDispatch once and for all */
+
 import { useDispatch } from 'react-redux';
 
 const mapper = (obj, func): any => {

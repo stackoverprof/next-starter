@@ -1,3 +1,5 @@
+/* Multi state hook dedicated for forms use case */
+
 import { useState } from 'react';
 
 interface ProductTuple<T> {

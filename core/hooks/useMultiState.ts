@@ -1,3 +1,5 @@
+/* useState but multiple states */
+
 import { useState } from 'react';
 
 type ProductTuple<T> = [T, (any) => void, () => void];

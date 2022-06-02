@@ -1,3 +1,5 @@
+/* Usefull hook in case of dealing with responsiveness */
+
 import { useEffect, useState } from 'react';
 
 const debounce = (callback, waitTime) => {

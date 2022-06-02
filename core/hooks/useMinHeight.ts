@@ -1,3 +1,5 @@
+/* To force the minimal page height as same as the page screen height */
+
 import { useEffect, useRef, useState } from 'react';
 
 type ReturnTuple = [

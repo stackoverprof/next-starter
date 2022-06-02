@@ -1,3 +1,5 @@
+/* Global css here, remember to keep this minimal */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

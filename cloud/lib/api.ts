@@ -1,3 +1,5 @@
+/* Axios instance and interceptor */
+
 import axios from 'axios';
 
 const api = axios.create();

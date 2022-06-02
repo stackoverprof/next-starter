@@ -1,3 +1,5 @@
+/* Example use of SWR, data fetching library */
+
 import useSWR from 'swr';
 import { getUser } from '@cloud/fetchers';
 

@@ -1,3 +1,5 @@
+/* This file will be the single source of all api calls */
+
 import api from '../lib/api';
 
 export const getUser = async () => {
