@@ -3,11 +3,12 @@ export interface AuthStateType {
 }
 
 export interface AuthActionsType {
-	setAccessToken(val: any): void;
+	setAccessToken(val: string): void;
 	reset(): void;
 }
 
 export interface UseAuthType extends AuthStateType, AuthActionsType {
 	authenticated: boolean;
+	setAccessToken(val: string): void;
 }
 

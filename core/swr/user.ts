@@ -1,8 +1,8 @@
-import * as fetchers from '@cloud/fetchers';
 import useSWR from 'swr';
+import { getUser } from '@cloud/fetchers';
 
 const useUser = () => {
-	const { data, mutate, error } = useSWR('api_user', fetchers.getUser);
+	const { data, mutate, error } = useSWR('api_user', getUser);
 
 	return {
 		loading: !data && !error,
