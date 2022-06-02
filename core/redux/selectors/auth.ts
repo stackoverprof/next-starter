@@ -1,12 +1,12 @@
-import { actions } from '../reducers/auth';
-import { RootState } from '../store';
+import auth from '../reducers/auth';
+import { StoreType } from '../store';
 import { UseAuthType } from '@core/@types/authRedux';
-import { useAutoDispatcher } from '../root';
+import { useAutoDispatcher } from '@core/hooks/useAutoDispatcher';
 import { useSelector } from 'react-redux';
 
 export const useAuth = (): UseAuthType => {
-	const state = useSelector((state: RootState) => state.auth);
-	const dispatcher = useAutoDispatcher(actions);
+	const state = useSelector((store: StoreType) => store.auth);
+	const dispatcher = useAutoDispatcher(auth.actions);
 
 	// SUPPORTING FUNCTIONS
 	const isTokenExist = () => {

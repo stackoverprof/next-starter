@@ -1,4 +1,4 @@
-import { AuthActionsType, AuthStateType } from '@core/@types/authRedux';
+import { AuthStateType } from '@core/@types/authRedux';
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState: AuthStateType = {
@@ -16,5 +16,4 @@ const ReduxSlice = createSlice({
 	},
 });
 
-export const actions: AuthActionsType = ReduxSlice.actions;
-export default ReduxSlice.reducer;
+export default ReduxSlice;
