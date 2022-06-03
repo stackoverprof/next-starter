@@ -9,7 +9,7 @@ interface Props {
 	style?: React.CSSProperties;
 }
 
-const MainLayout = ({ children, title, className, style }: Props): JSX.Element => {
+const MainLayout = ({ children, title, className, style }: Props) => {
 	const [minHeight, upperRef, lowerRef] = useMinHeight();
 
 	return (

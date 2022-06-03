@@ -9,7 +9,7 @@ interface FormType {
 	story: string;
 }
 
-const Form = (): JSX.Element => {
+const Form = () => {
 	const [isLoading, setIsLoading] = useState(false);
 
 	const { form, mutateForm, resetForm } = useForm<FormType>({

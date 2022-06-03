@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '@components/_shared/Link';
 
-const Page404 = (): JSX.Element => {
+const Page404 = () => {
 	return (
 		<div className="flex-cc col fullscreen">
 			<h1 className="mb-4">404 | Not Found</h1>

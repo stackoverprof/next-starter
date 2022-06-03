@@ -24,7 +24,7 @@ const Link = ({
 	disabled,
 	onClick,
 	scroll,
-}: Props): JSX.Element => {
+}: Props) => {
 	return (
 		<NextLink href={href} scroll={scroll}>
 			<a

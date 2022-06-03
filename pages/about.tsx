@@ -3,7 +3,7 @@ import Link from '@components/_shared/Link';
 import MainLayout from '@components/_layouts/MainLayout';
 import useUser from '@core/swr/user';
 
-const About = (): JSX.Element => {
+const About = () => {
 	const { user, loading } = useUser();
 
 	return (

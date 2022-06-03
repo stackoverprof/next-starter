@@ -33,7 +33,7 @@ const Image = ({
 	objectPosition,
 	width,
 	height,
-}: Props): JSX.Element => (
+}: Props) => (
 	<div className={['relative', className].join(' ')} style={{ ...style, width, height }}>
 		<NextImage
 			objectFit={objectFit}

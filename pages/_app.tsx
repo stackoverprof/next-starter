@@ -8,7 +8,7 @@ import { SWRConfig } from 'swr';
 import '@core/styles/global.tailwind.css';
 import '@core/styles/typefaces.css';
 
-const App = ({ Component, pageProps }: AppProps): JSX.Element => {
+const App = ({ Component, pageProps }: AppProps) => {
 	return (
 		<>
 			<Head>
