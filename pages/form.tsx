@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Link from '@components/_shared/Link';
 import MainLayout from '@components/_layouts/MainLayout';
 import useForm from '@core/hooks/useForm';
+import { NextPage } from 'next';
 
 interface FormType {
 	nickname: string;
@@ -9,7 +10,7 @@ interface FormType {
 	story: string;
 }
 
-const Form = () => {
+const Form: NextPage = () => {
 	const [isLoading, setIsLoading] = useState(false);
 
 	const { form, mutateForm, resetForm } = useForm<FormType>({

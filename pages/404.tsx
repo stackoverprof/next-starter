@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from '@components/_shared/Link';
+import { NextPage } from 'next';
 
-const Page404 = () => {
+const Page404: NextPage = () => {
 	return (
 		<div className="flex-cc col fullscreen">
 			<h1 className="mb-4">404 | Not Found</h1>

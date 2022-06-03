@@ -2,8 +2,9 @@ import React from 'react';
 import Link from '@components/_shared/Link';
 import MainLayout from '@components/_layouts/MainLayout';
 import useUser from '@core/swr/user';
+import { NextPage } from 'next';
 
-const About = () => {
+const About: NextPage = () => {
 	const { user, loading } = useUser();
 
 	return (

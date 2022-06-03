@@ -1,8 +1,9 @@
 import React from 'react';
 import Link from '@components/_shared/Link';
 import MainLayout from '@components/_layouts/MainLayout';
+import { NextPage } from 'next';
 
-const Index = () => {
+const Index: NextPage = () => {
 	return (
 		<MainLayout title="Home" className="flex-sc col">
 			<h1 className="z-10 mt-48 mb-4 text-4xl font-bold text-center">Next (Basic) Starter</h1>
