@@ -1,12 +1,12 @@
-import { AuthStateType } from '@core/@types/authRedux';
+import { AuthStoreType } from '@core/@types/authRedux';
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState: AuthStateType = {
+const initialState: AuthStoreType = {
 	accessToken: '',
 };
 
-const ReduxSlice = createSlice({
-	name: 'AUTH',
+const AuthSlice = createSlice({
+	name: 'Auth',
 	initialState,
 	reducers: {
 		setAccessToken: (state, action) => {
@@ -16,4 +16,4 @@ const ReduxSlice = createSlice({
 	},
 });
 
-export default ReduxSlice;
+export default AuthSlice;

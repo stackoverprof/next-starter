@@ -1,4 +1,4 @@
-export interface AuthStateType {
+export interface AuthStoreType {
 	accessToken: string;
 }
 
@@ -7,7 +7,7 @@ export interface AuthActionsType {
 	reset(): void;
 }
 
-export interface UseAuthType extends AuthStateType, AuthActionsType {
+export interface UseAuthStoreType extends AuthStoreType, AuthActionsType {
 	authenticated: boolean;
 	setAccessToken(val: string): void;
 }

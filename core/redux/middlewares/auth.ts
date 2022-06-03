@@ -1,6 +1,6 @@
 import auth from '../slices/auth';
 import { StoreType } from '../store';
-import { UseAuthType } from '@core/@types/authRedux';
+import { UseAuthStoreType } from '@core/@types/authRedux';
 import { useAutoDispatcher } from '@core/hooks/useAutoDispatcher';
 import { useSelector } from 'react-redux';
 
@@ -10,7 +10,7 @@ import { useSelector } from 'react-redux';
 	or make a derivative state from the real states
 */
 
-export const useAuth = (): UseAuthType => {
+export const useAuthStore = (): UseAuthStoreType => {
 	const state = useSelector((store: StoreType) => store.auth);
 	const dispatcher = useAutoDispatcher(auth.actions);
 
@@ -37,7 +37,7 @@ export const useAuth = (): UseAuthType => {
 /* 
 	Example when in use:
 
-	const { accessToken, authenticated, setAccessToken } = useAuth();
+	const { accessToken, authenticated, setAccessToken } = useAuthStore();
 
 	accessToken is a state
 	authenticated is a derivative state

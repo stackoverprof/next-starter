@@ -1,11 +1,11 @@
 import React from 'react';
 import Link from '@components/_shared/Link';
 import MainLayout from '@components/_layouts/MainLayout';
-import useUser from '@core/swr/user';
+import useUserData from '@core/swr/user';
 import { NextPage } from 'next';
 
 const About: NextPage = () => {
-	const { user, loading } = useUser();
+	const { user, loading } = useUserData();
 
 	return (
 		<MainLayout title="About" className="flex-sc col">

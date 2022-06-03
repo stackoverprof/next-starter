@@ -3,7 +3,7 @@
 import useSWR from 'swr';
 import { getUser } from '@core/api/fetchers';
 
-const useUser = () => {
+const useUserData = () => {
 	const { data, mutate, error } = useSWR('api_user', getUser);
 
 	return {
@@ -14,4 +14,4 @@ const useUser = () => {
 	};
 };
 
-export default useUser;
+export default useUserData;
