@@ -9,7 +9,6 @@
 		},
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,
-		"checkJs": false,
 		"skipLibCheck": true,
 		"strict": false,
 		"forceConsistentCasingInFileNames": true,
@@ -22,13 +21,6 @@
 		"jsx": "preserve",
 		"incremental": true
 	},
-	"include": [
-		"next-env.d.ts",
-		"**/*.ts",
-		"**/*.tsx",
-		"next.config.js",
-		"tailwind.config.js",
-		"postcss.config.js"
-	],
-	"exclude": ["node_modules", "**/*.js"]
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+	"exclude": ["node_modules"]
 }
