@@ -3,11 +3,9 @@
 		"target": "es5",
 		"baseUrl": ".",
 		"paths": {
-			"@cloud/*": ["cloud/*"],
 			"@components/*": ["components/*"],
 			"@core/*": ["core/*"],
-			"@pages/*": ["pages/*"],
-			"@utils/*": ["utils/*"]
+			"@pages/*": ["pages/*"]
 		},
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,
