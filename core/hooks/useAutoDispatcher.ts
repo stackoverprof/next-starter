@@ -10,4 +10,3 @@ export const useAutoDispatcher = (actions) => {
 	const dispatch = useDispatch();
 	return mapper(actions, (action) => (val) => dispatch(action(val)));
 };
-

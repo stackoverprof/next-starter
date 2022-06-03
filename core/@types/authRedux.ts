@@ -11,4 +11,3 @@ export interface UseAuthType extends AuthStateType, AuthActionsType {
 	authenticated: boolean;
 	setAccessToken(val: string): void;
 }
-
