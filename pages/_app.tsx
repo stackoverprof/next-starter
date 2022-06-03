@@ -4,7 +4,6 @@ import ProgressBar from '@components/_shared/ProgressBar';
 import store from '@core/redux/store';
 import { AppProps } from 'next/app';
 import { Provider } from 'react-redux';
-import { SWRConfig } from 'swr';
 import '@core/styles/global.tailwind.css';
 import '@core/styles/typefaces.css';
 
@@ -17,9 +16,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 			</Head>
 			<ProgressBar color="#009AFF" />
 			<Provider store={store}>
-				<SWRConfig>
-					<Component {...pageProps} />
-				</SWRConfig>
+				<Component {...pageProps} />
 			</Provider>
 		</>
 	);
