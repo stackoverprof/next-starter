@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import ProgressBar from 'nextjs-progressbar';
+import ProgressBar from '@components/_shared/ProgressBar';
 import store from '@core/redux/store';
 import { AppProps } from 'next/app';
 import { Provider } from 'react-redux';
@@ -15,13 +15,7 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
 				<link rel="icon" href="/favicon.ico" />
 				<meta name="theme-color" content="#000000" />
 			</Head>
-			<ProgressBar
-				color="#000"
-				startPosition={0.3}
-				stopDelayMs={200}
-				height={3}
-				options={{ showSpinner: false }}
-			/>
+			<ProgressBar color="#009AFF" />
 			<Provider store={store}>
 				<SWRConfig>
 					<Component {...pageProps} />
