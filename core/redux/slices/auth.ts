@@ -1,4 +1,4 @@
-import { AuthStoreType } from '@core/@types/authRedux';
+import { AuthStoreType } from '@core/@types/auth';
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState: AuthStoreType = {

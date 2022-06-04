@@ -1,6 +1,6 @@
 import auth from '../slices/auth';
 import { StoreType } from '../store';
-import { UseAuthStoreType } from '@core/@types/authRedux';
+import { UseAuthStoreType } from '@core/@types/auth';
 import { useAutoDispatcher } from '@core/hooks/useAutoDispatcher';
 import { useSelector } from 'react-redux';
 
