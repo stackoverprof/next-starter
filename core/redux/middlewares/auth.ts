@@ -10,7 +10,7 @@ import { useSelector } from 'react-redux';
 	or make a derivative state from the real states
 */
 
-export const useAuthStore = (): UseAuthStoreType => {
+const useAuthStore = (): UseAuthStoreType => {
 	const state = useSelector((store: StoreType) => store.auth);
 	const dispatcher = useAutoDispatcher(auth.actions);
 
@@ -47,3 +47,4 @@ export const useAuthStore = (): UseAuthStoreType => {
 	no more need to `dispatch(setAccessToken())`
 	you can just do `setAccessToken()`
 */
+export default useAuthStore;
