@@ -1,7 +1,7 @@
 /* Example use of SWR, data fetching library */
 
 import useSWR from 'swr';
-import { getUser } from '@core/api/fetchers';
+import { getUser } from '@core/cloud/fetchers';
 
 const useUserData = () => {
 	const { data, mutate, error } = useSWR('api_user', getUser);
