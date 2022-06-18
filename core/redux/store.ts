@@ -1,4 +1,5 @@
 import AuthSlice from './slices/auth';
+import OtherSlice from './slices/other';
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
 // INFERRED STORE TYPE
@@ -7,6 +8,7 @@ export type StoreType = ReturnType<typeof store.getState>;
 // COMBINING ALL REDUCERS
 const reducer = combineReducers({
 	auth: AuthSlice.reducer,
+	other: OtherSlice.reducer,
 });
 
 // INITIALIZE STORE

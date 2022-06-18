@@ -1,4 +1,5 @@
 import React from 'react';
+import AppProvider from '@core/contexts';
 import Head from 'next/head';
 import ProgressBar from '@components/_shared/ProgressBar';
 import store from '@core/redux/store';
@@ -16,7 +17,9 @@ const App = ({ Component, pageProps }: AppProps) => {
 			</Head>
 			<ProgressBar color="#009AFF" />
 			<Provider store={store}>
-				<Component {...pageProps} />
+				<AppProvider>
+					<Component {...pageProps} />
+				</AppProvider>
 			</Provider>
 		</>
 	);
