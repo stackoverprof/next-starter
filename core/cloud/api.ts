@@ -15,9 +15,7 @@ api.interceptors.request.use(
 			},
 		};
 	},
-	(error) => {
-		Promise.reject(error);
-	}
+	(err) => Promise.reject(err)
 );
 
 // API FETCHER FUNCTIONS
