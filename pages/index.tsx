@@ -47,8 +47,6 @@ const Index: NextPage = () => {
 
 // Above are sample use of
 
-// useLayout: which is a custom hooks in context management
-// Alert: custom popping out alert box that automatically vanish
 // Link: custom link that can be styled into anything and is so comfortable
 // MainLayout: open 'components/_layouts/', that is the place where you put navbar and footer, not here
 

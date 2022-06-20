@@ -47,4 +47,5 @@ const useAuthStore = (): UseAuthStoreType => {
 	no more need to `dispatch(setAccessToken())`
 	you can just do `setAccessToken()`
 */
+
 export default useAuthStore;

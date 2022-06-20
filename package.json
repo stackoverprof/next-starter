@@ -2,6 +2,7 @@
 	"name": "nextjs",
 	"version": "1.0.0",
 	"private": true,
+	"template": "stackoverprof/next-starter",
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
