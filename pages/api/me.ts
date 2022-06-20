@@ -9,7 +9,9 @@ const handler = async (req: NextApiRequest, res: NextApiResponse): Promise<void>
 		username: 'johndoe',
 	};
 
-	return res.status(200).json(sampleUserData);
+	setTimeout(() => {
+		res.status(200).json(sampleUserData);
+	}, 2000);
 };
 
 export default handler;
