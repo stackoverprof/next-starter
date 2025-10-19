@@ -3,6 +3,7 @@ import { fileURLToPath } from 'url';
 
 import { FlatCompat } from '@eslint/eslintrc';
 import perfectionist from 'eslint-plugin-perfectionist';
+import preferArrow from 'eslint-plugin-prefer-arrow';
 import tailwindcss from 'eslint-plugin-tailwindcss';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -17,6 +18,7 @@ const eslintConfig = [
     {
         plugins: {
             perfectionist: perfectionist,
+            'prefer-arrow': preferArrow,
             tailwindcss: tailwindcss,
         },
     },
@@ -50,6 +52,16 @@ const eslintConfig = [
             'react/self-closing-comp': 'error',
             'quotes': ['error', 'single'],
             'semi': ['error', 'always'],
+            'func-style': ['error', 'expression', { 'allowArrowFunctions': true }],
+            'prefer-arrow-callback': 'error',
+            'prefer-arrow/prefer-arrow-functions': [
+                'warn',
+                {
+                    'disallowPrototype': true,
+                    'singleReturnOnly': false,
+                    'classPropertiesAllowed': false
+                }
+            ],
             
             // Moderate Rules (Good Practice)
             'import/order': [

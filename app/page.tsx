@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function Home() {
+const Home = () => {
 
     return (
         <div className="flex-cc col min-h-screen p-8 pb-20 font-sans sm:p-20 ">
@@ -102,4 +102,6 @@ export default function Home() {
             </footer>
         </div>
     );
-}
+};
+
+export default Home;
