@@ -6,7 +6,7 @@ import prettierConfig from 'eslint-config-prettier';
 import perfectionist from 'eslint-plugin-perfectionist';
 import preferArrow from 'eslint-plugin-prefer-arrow';
 import prettier from 'eslint-plugin-prettier';
-import tailwindcss from 'eslint-plugin-tailwindcss';
+// import tailwindcss from 'eslint-plugin-tailwindcss'; // Disabled - incompatible with Tailwind v4
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -22,7 +22,7 @@ const eslintConfig = [
         plugins: {
             perfectionist: perfectionist,
             'prefer-arrow': preferArrow,
-            tailwindcss: tailwindcss,
+            // tailwindcss: tailwindcss, // Disabled - incompatible with Tailwind v4
             prettier: prettier,
         },
     },
@@ -107,7 +107,13 @@ const eslintConfig = [
                 },
             ],
             'no-unused-vars': 'error',
-            // Perfectionist rules for intuitive sorting
+            // Perfectionist rules for intuitive sorting (moved below)
+
+            // Strict Rules (High Quality, More Friction)
+            '@typescript-eslint/no-explicit-any': 'warn',
+            'import/no-unresolved': 'error',
+
+            // Tailwind CSS rules (using perfectionist for v4 compatibility)
             'perfectionist/sort-jsx-props': [
                 'error',
                 {
@@ -148,15 +154,6 @@ const eslintConfig = [
                     },
                 },
             ],
-
-            // Strict Rules (High Quality, More Friction)
-            '@typescript-eslint/no-explicit-any': 'warn',
-            'import/no-unresolved': 'error',
-
-            // Tailwind CSS rules
-            'tailwindcss/classnames-order': 'error',
-            'tailwindcss/no-custom-classname': 'off', // Disabled to allow CSS custom properties
-            'tailwindcss/no-contradicting-classname': 'warn',
         },
     },
 ];
