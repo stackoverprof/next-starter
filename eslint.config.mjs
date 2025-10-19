@@ -3,6 +3,7 @@ import { fileURLToPath } from 'url';
 
 import { FlatCompat } from '@eslint/eslintrc';
 import perfectionist from 'eslint-plugin-perfectionist';
+import tailwindcss from 'eslint-plugin-tailwindcss';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -16,6 +17,7 @@ const eslintConfig = [
     {
         plugins: {
             perfectionist: perfectionist,
+            tailwindcss: tailwindcss,
         },
     },
     {
@@ -81,6 +83,11 @@ const eslintConfig = [
             // Strict Rules (High Quality, More Friction)
             '@typescript-eslint/no-explicit-any': 'warn',
             'import/no-unresolved': 'error',
+            
+            // Tailwind CSS rules
+            'tailwindcss/classnames-order': 'warn',
+            'tailwindcss/no-custom-classname': 'off', // Disabled to allow CSS custom properties
+            'tailwindcss/no-contradicting-classname': 'warn',
         },
     },
 ];

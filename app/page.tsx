@@ -3,21 +3,21 @@ import Image from 'next/image';
 export default function Home() {
 
     return (
-        <div className="font-sans flex-cc col min-h-screen p-8 pb-20 sm:p-20">
-            <main className="flex-cc col gap-[32px] flex-1">
+        <div className="flex-cc col min-h-screen p-8 pb-20 font-sans sm:p-20 ">
+            <main className="flex-cc col flex-1 gap-[32px]">
                 <div className="text-center sm:text-left">
-                    <h1 className="text-4xl sm:text-6xl font-bold tracking-tight mb-2">
+                    <h1 className="mb-2 text-4xl font-bold tracking-tight sm:text-6xl">
                         next-starter
                     </h1>
-                    <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400">
+                    <p className="text-lg text-gray-600 sm:text-xl dark:text-gray-400">
                         by stackoverprof
                     </p>
                 </div>
         
-                <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
+                <ol className="list-inside list-decimal text-center font-mono text-sm/6 sm:text-left">
                     <li className="mb-2 tracking-[-.01em]">
                         Get started by editing{' '}
-                        <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
+                        <code className="rounded bg-black/[.05] px-1 py-0.5 font-mono font-semibold dark:bg-white/[.06]">
                             app/page.tsx
                         </code>
                         .
@@ -32,7 +32,7 @@ export default function Home() {
                         href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
                         rel="noopener noreferrer"
                         target="_blank"
-                        className="rounded-full border border-solid border-transparent transition-colors flex-cc bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+                        className="flex-cc bg-foreground text-background h-10 gap-2 rounded-full border border-solid border-transparent px-4 text-sm font-medium transition-colors hover:bg-[#383838] sm:h-12 sm:w-auto sm:px-5 sm:text-base dark:hover:bg-[#ccc]"
                     >
                         <Image
                             alt="Vercel logomark"
@@ -47,13 +47,13 @@ export default function Home() {
                         href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
                         rel="noopener noreferrer"
                         target="_blank"
-                        className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex-cc hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
+                        className="flex-cc h-10 w-full rounded-full border border-solid border-black/[.08] px-4 text-sm font-medium transition-colors hover:border-transparent hover:bg-[#f2f2f2] sm:h-12 sm:w-auto sm:px-5 sm:text-base md:w-[158px] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
                     >
                         Read our docs
                     </a>
                 </div>
             </main>
-            <footer className="h-5 flex-cc gap-[24px] flex-wrap">
+            <footer className="flex-cc h-5 flex-wrap gap-[24px]">
                 <a
                     href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
                     rel="noopener noreferrer"
