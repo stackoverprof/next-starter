@@ -4,14 +4,15 @@ export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
+        <div className="text-center sm:text-left">
+          <h1 className="text-4xl sm:text-6xl font-bold tracking-tight mb-2">
+            next-starter
+          </h1>
+          <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400">
+            by stackoverprof
+          </p>
+        </div>
+        
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
