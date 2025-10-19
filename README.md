@@ -13,6 +13,7 @@ A personal Next.js boilerplate with modern tooling and best practices pre-config
 - 🚀 **Turbopack** for faster builds
 - 🎯 **Geist Fonts** (Sans & Mono) pre-configured
 - 📱 **Responsive design** out of the box
+- 🎛️ **Custom Flexbox Utilities** for common layouts
 
 ## Getting Started
 
@@ -66,6 +67,67 @@ This boilerplate is designed to be your starting point. Feel free to:
 - Configure your preferred folder structure
 - Add common utilities and hooks
 - Customize the styling and branding
+
+## Custom Flexbox Utilities
+
+This boilerplate includes custom utility classes for common flexbox patterns:
+
+### **Flexbox Layout Classes**
+```css
+/* Center (c) */
+.flex-cc  /* items-center justify-center */
+.flex-cs  /* items-start justify-center */
+.flex-ce  /* items-end justify-center */
+
+/* Between (b) */
+.flex-bc  /* items-center justify-between */
+.flex-bs  /* items-start justify-between */
+.flex-be  /* items-end justify-between */
+
+/* Start (s) */
+.flex-sc  /* items-center justify-start */
+.flex-ss  /* items-start justify-start */
+.flex-se  /* items-end justify-start */
+
+/* End (e) */
+.flex-ec  /* items-center justify-end */
+.flex-es  /* items-start justify-end */
+.flex-ee  /* items-end justify-end */
+
+/* Evenly (v) */
+.flex-vc  /* items-center justify-evenly */
+.flex-vs  /* items-start justify-evenly */
+.flex-ve  /* items-end justify-evenly */
+
+/* Around (a) */
+.flex-ac  /* items-center justify-around */
+.flex-as  /* items-start justify-around */
+.flex-ae  /* items-end justify-around */
+
+/* Other Utilities */
+.col     /* flex-col */
+.full    /* h-full w-full */
+```
+
+### **Usage Examples**
+```jsx
+// Center content
+<div className="flex-cc h-screen">
+  <h1>Centered content</h1>
+</div>
+
+// Space between items
+<div className="flex-bc p-4">
+  <span>Left</span>
+  <span>Right</span>
+</div>
+
+// Vertical layout
+<div className="col flex-cc gap-4">
+  <div>Item 1</div>
+  <div>Item 2</div>
+</div>
+```
 
 ## Tech Stack
 
