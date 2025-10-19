@@ -18,20 +18,23 @@ A personal Next.js boilerplate with modern tooling and best practices pre-config
 ## Getting Started
 
 1. **Clone this repository:**
-   ```bash
-   git clone <your-repo-url>
-   cd next-starter
-   ```
+
+    ```bash
+    git clone <your-repo-url>
+    cd next-starter
+    ```
 
 2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+
+    ```bash
+    npm install
+    ```
 
 3. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
+
+    ```bash
+    npm run dev
+    ```
 
 4. **Open your browser:**
    Navigate to [http://localhost:3000](http://localhost:3000) to see your app.
@@ -73,6 +76,7 @@ This boilerplate is designed to be your starting point. Feel free to:
 This boilerplate includes custom utility classes for common flexbox patterns:
 
 ### **Flexbox Layout Classes**
+
 ```css
 /* Center (c) */
 .flex-cc  /* items-center justify-center */
@@ -110,6 +114,7 @@ This boilerplate includes custom utility classes for common flexbox patterns:
 ```
 
 ### **Usage Examples**
+
 ```jsx
 // Center content
 <div className="flex-cc h-screen">

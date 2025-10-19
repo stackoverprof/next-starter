@@ -11,13 +11,11 @@ export const metadata: Metadata = {
 const RootLayout = ({
     children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) => {
     return (
         <html lang="en">
-            <body
-                className={[fontVariables, 'antialiased'].join(' ')}
-            >
+            <body className={[fontVariables, 'antialiased'].join(' ')}>
                 {children}
             </body>
         </html>

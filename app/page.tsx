@@ -1,9 +1,8 @@
 import Image from 'next/image';
 
 const Home = () => {
-
     return (
-        <div className="flex-cc col min-h-screen p-8 pb-20 font-sans sm:p-20 ">
+        <div className="flex-cc col min-h-screen p-8 pb-20 font-sans sm:p-20">
             <main className="flex-cc col flex-1 gap-[32px]">
                 <div className="text-center sm:text-left">
                     <h1 className="mb-2 text-4xl font-bold tracking-tight sm:text-6xl">
@@ -13,7 +12,7 @@ const Home = () => {
                         by stackoverprof
                     </p>
                 </div>
-        
+
                 <ol className="list-inside list-decimal text-center font-mono text-sm/6 sm:text-left">
                     <li className="mb-2 tracking-[-.01em]">
                         Get started by editing{' '}
@@ -42,7 +41,7 @@ const Home = () => {
                             className="dark:invert"
                         />
                         Deploy now
-                    </a>                    
+                    </a>
                     <a
                         href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
                         rel="noopener noreferrer"
