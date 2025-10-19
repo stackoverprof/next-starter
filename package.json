@@ -6,10 +6,7 @@
         "dev": "next dev --turbopack",
         "build": "next build --turbopack",
         "start": "next start",
-        "lint": "eslint",
-        "lint:fix": "eslint --fix",
-        "format": "prettier --write .",
-        "format:check": "prettier --check ."
+        "format": "prettier --write . && eslint --fix ."
     },
     "dependencies": {
         "@stackoverprof/use-shared-state": "^2.2.1",
