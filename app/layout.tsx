@@ -16,7 +16,7 @@ const RootLayout = ({
     return (
         <html lang="en">
             <body
-                className={`${fontVariables} antialiased`}
+                className={[fontVariables, 'antialiased'].join(' ')}
             >
                 {children}
             </body>

@@ -4,7 +4,7 @@ export const fontVariables = [
     Geist({
         variable: '--font-geist-sans',
         subsets: ['latin'],
-    }),
+    }).variable,
     Geist_Mono({
         variable: '--font-geist-mono',
         subsets: ['latin'],
