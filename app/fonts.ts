@@ -1,12 +1,13 @@
 import { Geist, Geist_Mono } from 'next/font/google';
 
-export const fontVariables = [
-    Geist({
-        variable: '--font-geist-sans',
-        subsets: ['latin'],
-    }).variable,
-    Geist_Mono({
-        variable: '--font-geist-mono',
-        subsets: ['latin'],
-    }).variable,
-].join(' ');
+const geist = Geist({
+    variable: '--font-geist-sans',
+    subsets: ['latin'],
+});
+
+const geistMono = Geist_Mono({
+    variable: '--font-geist-mono',
+    subsets: ['latin'],
+});
+
+export const fontVariables = [geist.variable, geistMono.variable].join(' ');
